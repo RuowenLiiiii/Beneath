@@ -1,0 +1,225 @@
+
+@font-face {
+    font-family: 'Gimbal Extended';
+    src: url('tu/Gimbal Extended Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url('tu/5.JPG');  
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 10px;
+    z-index: 10;
+}
+
+.top-bar h2 {
+    display: inline-block;
+    color: #EDEDED; 
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Karla", serif;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#page01 {
+    color: rgb(137, 137, 137); 
+}
+
+.top-bar h2:hover {
+    color: rgb(137, 137, 137);  
+}
+
+#beneath:hover {
+    color: rgb(137, 137, 137);  
+}
+
+#page01:hover {
+    color: rgb(137, 137, 137);  
+}
+
+#page02:hover {
+    color: rgb(137, 137, 137); 
+}
+
+#page03:hover {
+    color: rgb(137, 137, 137); 
+}
+
+#page04:hover {
+    color: rgb(137, 137, 137);   
+}
+
+#page05:hover {
+    color: rgb(137, 137, 137); 
+}
+
+
+.main {
+    position: absolute;
+    top: 38px;
+    display: flex;
+    height: calc(100% - 38px);
+    width: 100%;
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.magnifying-glass {
+    display: flex;
+    width: 100%;
+}
+
+.magnifying-glass__img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-40px);
+}
+
+.magnifying-glass__magnifier {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.magnifying-glass__enlarged-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800%;  
+    height: 800%;
+    transform-origin: center center;
+    transform: scale(30); 
+    pointer-events: none;
+}
+
+
+.right-panel {
+    flex: 1;
+    background-color: #EDEDED;
+    padding: 50px;
+    overflow-y: scroll;
+    padding-bottom: 100px; 
+    padding-top: 30px;
+    max-height: calc(100% - 38px); 
+}
+
+
+.thumbnails {
+    display: flex;
+    justify-content: start; /* 如果需要从左边开始显示图片 */
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #EDEDED;
+    padding: 4px 0;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-behavior: smooth; 
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.thumbnails img:hover {
+    filter: grayscale(100%);
+}
+
+
+
+
+
+h1 {
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    color: rgb(21, 21, 21);
+}
+
+h2 {
+    font-size: 16px; 
+    font-weight: bold;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: rgb(21, 21, 21);
+}
+
+h3 {
+    font-size: 16px; 
+    font-weight: normal;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: rgb(21, 21, 21);
+}
+
+p {
+    font-size: 14px; 
+    white-space: pre-wrap;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(21, 21, 21);
+}
+
+#textContent {
+    font-size: 14px; 
+    white-space: pre-wrap;
+    padding-bottom: 100px; 
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(21, 21, 21);
+}
+
+/* .top-bar h2:hover {
+    color: #a80606; 
+} */

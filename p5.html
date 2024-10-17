@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneath - Art on Manhole</title>
+    <link rel="stylesheet" href="p5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="top-bar">
+        <h2 id="beneath" onclick="navigateTo('h.html')">Beneath</h2> / 
+        <h2 id="page01" onclick="navigateTo('p1.html')">01</h2> / 
+        <h2 id="page02" onclick="navigateTo('p2.html')">02</h2> / 
+        <h2 id="page03" onclick="navigateTo('p3.html')">03</h2> / 
+        <h2 id="page04" onclick="navigateTo('p4.html')">04</h2> / 
+        <h2 id="page05" onclick="navigateTo('p5.html')">05</h2>
+    </div>
+
+    <div class="canvas-container">
+        <img id="manhole-cover" src="tu/1.png" alt="Manhole Cover">
+        <canvas id="drawingCanvas" width="1000" height="1000"></canvas>
+    </div>
+    
+    <div class="scroll-container left-scroll">
+        <div class="scroll-content">
+            <img class="manhole-thumbnail" src="tu/1.png" alt="Manhole 1" data-src="tu/1.png">
+            <img class="manhole-thumbnail" src="tu/2.png" alt="Manhole 2" data-src="tu/2.png">
+            <img class="manhole-thumbnail" src="tu/3.png" alt="Manhole 3" data-src="tu/3.png">
+            <img class="manhole-thumbnail" src="tu/4.png" alt="Manhole 4" data-src="tu/4.png">
+            <img class="manhole-thumbnail" src="tu/5.png" alt="Manhole 5" data-src="tu/5.png">
+        </div>
+    </div>
+
+    <div class="scroll-container right-scroll">
+        <div class="scroll-content">
+            <img class="manhole-thumbnail" src="tu/6.png" alt="Manhole 6" data-src="tu/6.png">
+            <img class="manhole-thumbnail" src="tu/7.png" alt="Manhole 7" data-src="tu/7.png">
+            <img class="manhole-thumbnail" src="tu/8.png" alt="Manhole 8" data-src="tu/8.png">
+            <img class="manhole-thumbnail" src="tu/9.png" alt="Manhole 9" data-src="tu/9.png">
+            <img class="manhole-thumbnail" src="tu/10.png" alt="Manhole 10" data-src="tu/10.png">
+        </div>
+    </div>
+
+    <div class="controls">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#00a3d7">
+        <label for="colorHex">Hex:</label>
+        <input type="text" id="colorHex" placeholder="#00a3d7">        
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="100" value="5">
+        
+        <button id="clearCanvas">Clear</button>
+    </div>
+
+    <script src="p5.js"></script>
+</body>
+</html>

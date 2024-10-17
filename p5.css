@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Gimbal Extended';
+    src: url('tu/Gimbal Extended Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: url('tu/1.JPG');  */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 10px;
+    z-index: 10;
+}
+
+.top-bar h2 {
+    display: inline-block;
+    color: #EDEDED; 
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Karla", serif;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+#page05 {
+    color: rgba(50, 50, 50, 1);  
+}
+
+.top-bar h2:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#beneath:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#page01:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#page02:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#page03:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#page04:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+#page05:hover {
+    color: rgba(50, 50, 50, 1);     
+}
+
+
+.scroll-container {
+    position: fixed;
+    top: 50px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    /* background-color: #EDEDED; */
+    padding: 10px;
+}
+
+.left-scroll {
+    left: 0;
+}
+
+.right-scroll {
+    right: 0;
+}
+
+.scroll-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manhole-thumbnail {
+    width: 110px;
+    height: auto;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.manhole-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.canvas-container {
+    position: fixed;
+    left: 200px;
+    right: 200px;
+    top: 50px;
+    bottom: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #EDEDED; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#manhole-cover {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#drawingCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px; 
+    height: 1000px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.controls {
+    position: fixed;
+    bottom: 0;
+    /* left: 50%; 
+    transform: translateX(-50%);  */
+    width: 100%; 
+    background-color: #585858;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.controls label {
+    font-size: 12px;  
+    color: #EDEDED;  
+    font-weight: normal; 
+    font-family: "Karla", serif;
+}
+
+.controls input,
+.controls button {
+    margin: 0 10px;
+    color: #585858;
+}
+
+#clearCanvas {
+    background-color: #a2a2a2;
+    border: none;
+    padding: 5px 10px;
+    color: #EDEDED;
+    cursor: pointer;
+}
+
+#clearCanvas:hover {
+    background-color: #838383;
+}
+
+#colorPicker, #colorHex, #brushSize {
+    background-color: #585858;
+    color: #EDEDED;
+    border: 1px solid ;
+    color:  #EDEDED;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tu/IMG_3600.JPG ');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}

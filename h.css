@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'PUNKBABE';
+    src: url('tu/PUNKBABE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gimbal Extended';
+    src: url('tu/Gimbal Extended Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* .top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;  
+} */
+
+.top-bar.show {
+    opacity: 1; 
+}
+
+
+.top-bar h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    font-family: "Lexend Zetta", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    text-align:left;
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.centered-title h1 {
+    font-size: 13rem;
+    color: #EDEDED;
+    font-family: 'PUNKBABE', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.image-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #EDEDED;
+}
+
+
+
+
+
+.scrolling-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+.scrolling-content a {
+    text-transform: uppercase; 
+}
+
+.text-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-content {
+    display: flex;
+    align-items: center;
+    animation: scroll-left 10s linear infinite;
+}
+
+.text-row a {
+    display: inline-block;
+    font-size: 5rem;
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    transition: font-family 0.3s ease;
+}
+
+.text-row img {
+    height: 5rem;
+    margin-left: 20px;
+}
+
+.text-row:hover a {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: Italic;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.row2 .scrolling-content {
+    animation-direction: reverse;
+}
+
+.row3 .scrolling-content {
+    animation-duration: 15s;
+}
+
+.row4 .scrolling-content {
+    animation-direction: reverse;
+    animation-duration: 15s;
+}
+
+.row5 .scrolling-content {
+    animation-duration: 15s;
+}
